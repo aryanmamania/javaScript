@@ -21,10 +21,11 @@
         });
 
         promiseData.then((result) => {
-            document.getElementById('output').textContent = `Resolved: ${result.message}, Random Number: ${result.number.toFixed(4)}`; 
+            document.getElementById('output').textContent = `Resolved: ${result.message}, Random Number: ${result.number.toFixed(0)}`; 
         }).catch((error) => {
-            document.getElementById('output').textContent = `Rejected: ${error.message}, Random Number: ${error.number.toFixed(4)}`;
+            document.getElementById('output').textContent = `Rejected: ${error.message}, Random Number: ${error.number.toFixed(0)}`;
         });
+
     </script>
 </body>
 </html>
