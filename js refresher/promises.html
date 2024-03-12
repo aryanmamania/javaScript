@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="output"></p> 
+    <script>
+        let promiseData = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                const randomValue = Math.floor(Math.random() * 100) + 1;
+               
+                if (randomValue < 50) {
+                    resolve({message: 'Success', number: randomValue}); 
+                } else {
+                    reject({message: 'Failure', number: randomValue}); 
+                }
+            }, 1000)
+        });
+
+        promiseData.then((result) => {
+            document.getElementById('output').textContent = `Resolved: ${result.message}, Random Number: ${result.number.toFixed(4)}`; 
+        }).catch((error) => {
+            document.getElementById('output').textContent = `Rejected: ${error.message}, Random Number: ${error.number.toFixed(4)}`;
+        });
+    </script>
+</body>
+</html>

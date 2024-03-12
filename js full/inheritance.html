@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>hello world</title>
+    </head>
+    <body>
+        <p>this is inheritance in js</p>
+    </body>
+    <script>
+        class fruits{
+            apple(){
+                console.log("this is apple")
+            }
+            mango(){
+                console.log("this is mango")
+            }
+        }
+        class vegetables extends fruits{
+            banana(){
+                console.log("this is banana")
+            }
+            watermellon(){
+                
+                console.log("this is watermellon")
+            }
+        }
+        let f1= new fruits;
+        let f2 = new vegetables;
+        console.log(f1.apple);
+        console.log(f2.mango);
+    </script>
+</html>

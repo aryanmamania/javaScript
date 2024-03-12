@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title> songs </title>
+    </head>
+    <body>
+        <h1>this is a lovely song</h1>
+        <p id="hello"></p>
+    </body>
+    <script>
+        const person={
+            firstname: "aryan",
+            lastname: "mamania",
+            display: function(){
+                let x= document.getElementById('hello');
+                x.innerHTML = this.firstname + "" + this.lastname;
+            }
+        }
+        person.display();
+    </script>
+</html>

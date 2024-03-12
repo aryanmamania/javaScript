@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <titel>hello js</titel>
+    </head>
+    <body>
+        <h1>this is findindex and find function</h1>
+    </body>
+    <script>
+        let data = [10, 54 , 1, 45];
+        let result= data.find(function(item){
+            return item<10;
+        })
+        let res = data.findIndex(function(item){
+            return item<15;
+        })
+        console.warn(result);
+        console.warn(res);
+    </script>
+</html>

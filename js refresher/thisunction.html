@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>1 step closer</title>
+    </head>
+    <body>
+        <h1>i have died everyday waiting for you</h1>
+        <p id="years"></p>
+    </body>
+    <script>
+        const iloveyou ={
+        firstName:"cause we were just kids",
+        secondLine: "dancing in the dark",
+        fullsong: function(){
+        return this.firstName + "" + this.secondLine
+        }
+        }
+        document.getElementById('years').innerHTML = iloveyou.fullsong()
+    </script>
+</html>

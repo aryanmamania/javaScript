@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            it will never change
+        </title>
+        <body>
+            <h1>love me like yuo do</h1>
+            <p id="english"></p>
+        </body>
+        <script>
+             const songs ={
+                allsongs :function(){
+                return this.song3 + "" + this.song4; 
+                }
+            }
+            const senorita ={
+            song1: "fillupbag",
+            song2: "come now follow my lead"
+            }
+            const shapeofyou = {
+                song3: "we should puul like a magnet",
+                song4: "cmon be my babe cmon",
+            }
+            document.getElementById('english').innerHTML = songs.allsongs.call(shapeofyou)
+        </script>
+    </head>
+</html>

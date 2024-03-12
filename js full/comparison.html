@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>aryan</title>
+    </head>
+    <body>
+        <p>whats the legal age of drinking</p>
+        <input id="aryan" value="18" />
+        <button onclick="myfunction()"> try it</button>
+        <p id="hello"></p>
+    </body>
+    <script>
+       function myFunction() {
+       let age = document.getElementById("age").value;
+       let voteable = (age < 18) ? "Too young":"Old enough";
+            document.getElementById("hello").innerHTML = voteable + " to vote.";
+        }
+    </script>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>this is it</title>
+    </head>
+    <body>
+        <h1>promises in java</h1>
+    </body>
+    <script>
+       // let a = undefined;
+        let PromiseData = new Promise((resolved,reject)=>{
+            setTimeout(()=>{
+                a="hello aryan welcome back"
+                resolved("done")
+            }, 3000);
+        })
+        PromiseData.then(()=>{
+            alert(a);
+        })
+    </script>
+
+</html>
