@@ -3,11 +3,18 @@
     <body>
         <p>upper case text </p>
         <button onclick="myfunction()">convert to upper case</button>
-        <p id="aryan">oof teri adda</p>
+        <button onclick="myfunction2()">convert to Lower case</button>
+        
+        <p id="aryan">hello world</p>
         <script>
             function myfunction(){
                 let text = document.getElementById("aryan").innerHTML;
                 document.getElementById("aryan").innerHTML=text.toUpperCase();
+                
+            }
+            function myfunction2(){
+                let text = document.getElementById("aryan").innerHTML;
+                document.getElementById("aryan").innerHTML=text.toLowerCase();
             }
         </script>
 

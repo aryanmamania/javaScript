@@ -76,18 +76,19 @@ console.log(x>y)*/
 
 //logical operators
 /*1.logical and 
- console.log( true && true);
- console.log(true && false);
- console.log(false && true);
- console.log(false && false);
+ console.log( true && true); = true 
+ console.log(true && false); = false
+ console.log(false && true); = false
+ console.log(false && false); = true
  2.logical or 
- console.log( true || true);
- console.log(true || false);
- console.log(false || true);
- console.log(false || false);
+ console.log( true || true); = true
+ console.log(true || false); = true
+ console.log(false || true); = true
+ console.log(false || false); = false
  3.logical Not
  console.log (!true)
- console.log(!false)*/
+ console.log(!false)
+*/
 
 //6)functions
 // function avg(a, b) {
@@ -164,25 +165,25 @@ var arr = [1, 2, 3, 4, 5];
 
 // 11) Date method
 // let myDate = new Date();
-// console.log(myDate.getTime());
 // console.log(myDate.getFullYear());
 // console.log(myDate);
 // console.log(myDate.getDay());
+// console.log(myDate.getTime());
 
 // 12) Document object manupilation
 //document.getElementById('click').style.border = '2px solid blue'
 //'2px solid blue'
-let elem = document.getElementById('click');
+//let elem = document.getElementById('click');
 //console.log(elem);
-let elemclass = document.getElementsByClassName('container');
+//let elemclass = document.getElementsByClassName('container');
 //console.log(elemclass);
-//elemclass[0].style.background = "black"
-//elemclass[1].style.fontSize = '100px';
+// elemclass[0].style.background = "black"
+// elemclass[1].style.fontSize = '100px';
 // elemclass[0].classList.add("aryan")
 // elemclass[0].classList.add("text-success")
 // console.log(elemclass[0].innerHTML);
 // console.log(elemclass[0].innerText);
-tn = document.getElementsByTagName('div');
+// tn = document.getElementsByTagName('div');
 // console.log(tn);
 // createdElement = document.createElement('p');
 // createdElement.innerText = "my name is Aryan"
@@ -230,10 +231,10 @@ tn = document.getElementsByTagName('div');
 // })
 
 // 14) arrow function
-// function summ(a, b){
+// function sum(a, b){
 //     return a+b;
 // }
-// summ = (a ,b)=>{
+// sum = (a ,b)=>{
 //     return (a+b);
 // }
 
