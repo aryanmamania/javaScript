@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        function outer(){
-            let message = 'Hi i am Aryan'
-            function inner(){
-                console.log(message)
-            }
-            return inner;
+      function outerFunction() {
+        let outerVariable = "I am outer";
+
+        function innerFunction() {
+          console.log(outerVariable);
         }
-        let func = outer();
-        func()
+
+        return innerFunction;
+      }
+
+      const closureFunc = outerFunction();
+
+      closureFunc();
     </script>
-</body>
+  </body>
 </html>
